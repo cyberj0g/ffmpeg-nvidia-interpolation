@@ -1,8 +1,11 @@
 # Fast Video Interpolation Filter for FFmpeg
+A high-performance video interpolation filter for FFmpeg, leveraging Nvidia's hardware-based Optical Flow Accelerator (NVOFA FRUC) and the interpolation algorithm from [Nvidia Optical Flow SDK](https://docs.nvidia.com/video-technologies/optical-flow-sdk/nvfruc-programming-guide/index.html). Coupled with Nvidia encoder and decoder, it can interpolate 1920x1080 H.264 video at up to 300 FPS on a desktop GPU. The filter code is based on Ffmpeg's `fps` filter.
+
 
 ![Demo Video](assets/bbb_demo_full.mp4)
 
-A high-performance video interpolation filter for FFmpeg, leveraging Nvidia's hardware-based Optical Flow Accelerator (NVOFA FRUC) and the interpolation algorithm from [Nvidia Optical Flow SDK](https://docs.nvidia.com/video-technologies/optical-flow-sdk/nvfruc-programming-guide/index.html). Coupled with Nvidia encoder and decoder, it can interpolate 1920x1080 H.264 video at up to 300 FPS on a desktop GPU. The filter code is based on Ffmpeg's `fps` filter.
+https://github.com/user-attachments/assets/1023b92f-b7e8-403e-b786-5b9839d61ff4
+
 
 ---
 
