@@ -1,0 +1,24 @@
+diff --git a/libavfilter/Makefile b/libavfilter/Makefile
+index bba0219876..701bf275f6 100644
+--- a/libavfilter/Makefile
++++ b/libavfilter/Makefile
+@@ -189,6 +189,7 @@ OBJS-$(CONFIG_SINE_FILTER)                   += asrc_sine.o
+ OBJS-$(CONFIG_ANULLSINK_FILTER)              += asink_anullsink.o
+
+ # video filters
++OBJS-$(CONFIG_NVINTERPOLATE_FILTER)          += vf_nvinterpolate.o
+ OBJS-$(CONFIG_ADDROI_FILTER)                 += vf_addroi.o
+ OBJS-$(CONFIG_ALPHAEXTRACT_FILTER)           += vf_extractplanes.o
+ OBJS-$(CONFIG_ALPHAMERGE_FILTER)             += vf_alphamerge.o framesync.o
+diff --git a/libavfilter/allfilters.c b/libavfilter/allfilters.c
+index af84aa3d97..43983f69df 100644
+--- a/libavfilter/allfilters.c
++++ b/libavfilter/allfilters.c
+@@ -175,6 +175,7 @@ extern const AVFilter ff_asrc_sine;
+
+ extern const AVFilter ff_asink_anullsink;
+
++extern const AVFilter ff_vf_nvinterpolate;
+ extern const AVFilter ff_vf_addroi;
+ extern const AVFilter ff_vf_alphaextract;
+ extern const AVFilter ff_vf_alphamerge;
